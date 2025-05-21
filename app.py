@@ -55,7 +55,7 @@ class FormularioTattoo(FlaskForm):
         validators=[DataRequired()])
     
     # Campo para forma de contacto
-    forma_contacto = StringField('Forma de contacto (correo o teléfono)', validators=[DataRequired()])
+    telefono_de_contacto = StringField('Número de telefono)', validators=[DataRequired()])
 
 # ---------- RUTAS ----------
 @app.route('/')
@@ -73,7 +73,7 @@ def formulario():
         disponibilidad = ', '.join(form.disponibilidad.data)  # Almacenamos los días seleccionados
         disponibilidad_horaria = ', '.join(form.disponibilidad_horaria.data)  # Almacenamos los horarios seleccionados
         referencias_texto = form.referencias_texto.data
-        forma_contacto = form.forma_contacto.data
+        telefono_de_contacto = form.telefono_de_contacto.data
 
         # Guardar archivos
         fotos = form.foto.data

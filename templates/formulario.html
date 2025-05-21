@@ -46,7 +46,7 @@
             <!-- Campo para las referencias de estilo -->
             <div class="form-group">
                 <label for="referencias_texto">{{ form.referencias_texto.label }}</label>
-                {{ form.referencias_texto(class="form-control", id="referencias_texto", placeholder="Describe lo que buscas en detalle") }}
+                {{ form.referencias_texto(class="form-control", id="referencias_texto", placeholder="Describe lo que buscas en detalle, Ejemplo: Quiero un tatuaje de una bruja del estilo grabado, que este de frernte mirando hacia abajo y con la escoba en la mano derecha, la mano iquierda levantada, sin que tenga contacto con la escoba. La ropa busco que sea un vestido clasico con mucha tela, y sin más elementos añadidos sobre el vestuario, que vaya descalza y esté sobre una hoguera medieval con unos fuegos que le abracen hasta las rodillas. ") }}
             </div>
 
             <!-- Campo para seleccionar días -->
@@ -63,10 +63,10 @@
                 {{ form.disponibilidad_horaria(class="form-control", id="disponibilidad_horaria") }}
             </div>
 
-            <!-- Campo para la forma de contacto -->
+            <!-- Campo para telefono de contacto -->
             <div class="form-group">
-                <label for="forma_contacto">{{ form.forma_contacto.label }}</label>
-                {{ form.forma_contacto(class="form-control", id="forma_contacto", placeholder="Ej: Correo electrónico o teléfono") }}
+                <label for="telefono_de_contacto">{{ form.telefono_de_contacto.label }}</label>
+                {{ form.telefono_de_contacto(class="form-control", id="telefono_de_contacto", placeholder="Ej: Número teléfono") }}
             </div>
 
             <!-- Botón de envío -->
